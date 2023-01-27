@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+/* Ce bout de code est pour la nav bar */
+* {
+        margin: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+        font-family: 'Roboto Condensed', sans-serif;
+}
+
+#navbar {
+        width: 100vw;
+        height: 12vh;
+        background-color: goldenrod;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+}
+
+#logo {
+        width: 6%;
+        height: 80%;
+        margin-left: 12px;
+}
+
+#inter {
+        width: 100%;
+        height: 100%;
+}
+
+#lien {
+        width: 50%;
+        height: 100%;
+        background-color: green;
+}
+
+#lien_liste {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+}
+
+li {
+        list-style-type: none;
+        font-size: 20px;
+}
+
+a {
+        outline: none;
+        text-decoration: none;
+        color: black;
+}
+
+.lien_nav:hover {
+        color: #edf2f4;
+        font-size: 40px;
+}
+
+p {
+        font-size: 20px;
+}
+
+#header {
+        width: 100vw;
+        height: 88vh;
+        background-color: lightblue;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+}
+
+#header-left {
+        width: 25%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+}
+
+.carre_lien {
+        width: 50px;
+        height: 50px;
+        border: 3px black solid;
+}
+
+#header-right {
+        width: 75%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+}
+
+.enfant {
+        width: 40%;
+        height: 80%;
+        background-color: lightsalmon;
+        border: 2px black solid;
+}
+
+#experience {
+        width: 100vw;
+        height: 70vh;
+        background-color: chocolate;
+        display: flex;
+}
+
+#experience_left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+}
+
+#experience_right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+}
+
+.enfant1 {
+        width: 50%;
+        height: 100%;
+        background-color: blanchedalmond;
+        border: 2px purple dashed;
+}
+
+#projet {
+        width: 100vw;
+        height: 70vh;
+        background-color: darkkhaki;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+}
+
+.enfant2 {
+        width: 250px;
+        height: 70%;
+        background-color: darkslateblue;
+        border: 2px darkgoldenrod solid;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+}
+
+#projet_enfant2-div {
+width: 80%;
+    height: 30%;
+}
+
+#projet_enfant2-div img {
+        width: 100%;
+}
+
+.enfant2 p {
+        font-size: 15px;
+}
+
+#footer {
+        width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+/* Animation pour logo un bounce */
+.bounce-in-bottom {
+        -webkit-animation: bounce-in-bottom 1.2s 1.5s both;
+        animation: bounce-in-bottom 1.2s 1.5s both;
+}
+
+@-webkit-keyframes bounce-in-bottom {
+        0% {
+                -webkit-transform: translateY(500px);
+                transform: translateY(500px);
+                -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+                opacity: 0;
+        }
+
+        38% {
+                -webkit-transform: translateY(0);
+                transform: translateY(0);
+                -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+                opacity: 1;
+        }
+
+        55% {
+                -webkit-transform: translateY(65px);
+                transform: translateY(65px);
+                -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+        }
+
+        72% {
+                -webkit-transform: translateY(0);
+                transform: translateY(0);
+                -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+        }
+
+        81% {
+                -webkit-transform: translateY(28px);
+                transform: translateY(28px);
+                -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+        }
+
+        90% {
+                -webkit-transform: translateY(0);
+                transform: translateY(0);
+                -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+        }
+
+        95% {
+                -webkit-transform: translateY(8px);
+                transform: translateY(8px);
+                -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+        }
+
+        100% {
+                -webkit-transform: translateY(0);
+                transform: translateY(0);
+                -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+        }
+}
+
+@keyframes bounce-in-bottom {
+        0% {
+                -webkit-transform: translateY(500px);
+                transform: translateY(500px);
+                -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+                opacity: 0;
+        }
+
+        38% {
+                -webkit-transform: translateY(0);
+                transform: translateY(0);
+                -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+                opacity: 1;
+        }
+
+        55% {
+                -webkit-transform: translateY(65px);
+                transform: translateY(65px);
+                -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+        }
+
+        72% {
+                -webkit-transform: translateY(0);
+                transform: translateY(0);
+                -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+        }
+
+        81% {
+                -webkit-transform: translateY(28px);
+                transform: translateY(28px);
+                -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+        }
+
+        90% {
+                -webkit-transform: translateY(0);
+                transform: translateY(0);
+                -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+        }
+
+        95% {
+                -webkit-transform: translateY(8px);
+                transform: translateY(8px);
+                -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+        }
+
+        100% {
+                -webkit-transform: translateY(0);
+                transform: translateY(0);
+                -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+        }
+}
+
+h1 {
+        font-size: 90px;
+}
+
+@media screen and (max-width:760px) {
+        #lien {
+                display: none;
+        }
+
+        #navbar {
+                background-color: blue;
+        }
+
+        #header {
+                flex-direction: column;
+        }
+
+        h1 {
+                font-size: 20px;
+        }
+
+}
+
+#fleche {
+        position: fixed;
+        right: 30px;
+        bottom: 30px;
+}
+
+.heartbeat:hover {
+        -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+        animation: heartbeat 1.5s ease-in-out infinite both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2023-1-26 14:18:43
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation heartbeat
+ * ----------------------------------------
+ */
+@-webkit-keyframes heartbeat {
+        from {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                -webkit-transform-origin: center center;
+                transform-origin: center center;
+                -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+        }
+
+        10% {
+                -webkit-transform: scale(0.91);
+                transform: scale(0.91);
+                -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+        }
+
+        17% {
+                -webkit-transform: scale(0.98);
+                transform: scale(0.98);
+                -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+        }
+
+        33% {
+                -webkit-transform: scale(0.87);
+                transform: scale(0.87);
+                -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+        }
+
+        45% {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+        }
+}
+
+@keyframes heartbeat {
+        from {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                -webkit-transform-origin: center center;
+                transform-origin: center center;
+                -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+        }
+
+        10% {
+                -webkit-transform: scale(0.91);
+                transform: scale(0.91);
+                -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+        }
+
+        17% {
+                -webkit-transform: scale(0.98);
+                transform: scale(0.98);
+                -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+        }
+
+        33% {
+                -webkit-transform: scale(0.87);
+                transform: scale(0.87);
+                -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+        }
+
+        45% {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+        }
+}
